@@ -14,8 +14,8 @@ set number
 " Faster movement
 map J 3j
 map K 3k
-map H gT
-map L gt
+map H <c-w>h
+map L <c-w>l
 
 " Save and quit
 noremap <space>w :w<return>
