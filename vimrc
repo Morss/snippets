@@ -1,3 +1,5 @@
+" wget https://raw.githubusercontent.com/Morss/snippets/master/vimrc -O ~/.vimrc
+
 " Cursor style
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
