@@ -1,0 +1,39 @@
+js <<EOM
+  window.addEventListener('keypress',function (event) {
+    var code=event.charCode;
+    if ((liberator.mode === modes.INSERT && modes.extended === modes.MENU)
+    ||(liberator.mode ==modes.NORMAL && code==32)
+    ||(liberator.mode ==modes.COMMAND_LINE && code !=32)){
+      let map = mappings.get(liberator.mode, events.toString(event));
+      if (map) {
+        event.preventDefault();
+        event.stopPropagation();
+        map.execute();
+      }
+    }
+  },false);
+EOM
+
+set gui=nonavigation
+map K 3k
+map J 3j
+map H gT
+map L gt
+
+let mapleader="\"
+map <space> <leader>
+
+map <leader>n :set gui=navigation<return>
+map <leader>N :set gui=nonavigation<return>
+map <leader>L :set! intl.accept_languages=
+
+map <leader>l :open http://localhost:80<CR>
+
+map <leader>g :tabopen g 
+map <leader>i :tabopen i 
+map <leader>w :tabopen w 
+
+map <leader>t :tabopen t<CR>
+map <leader>x :tabopen x<CR>
+map <leader>z :tabopen z<CR>
+map <leader>h :tabopen h<CR>
