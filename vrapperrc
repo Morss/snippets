@@ -1,0 +1,55 @@
+set noincsearch
+set ignorecase
+set smartcase
+set noexpandtab
+
+inoremap <s-space> <esc>la
+
+map J 3j
+map K 3k
+map H gT
+map L gt
+
+noremap ' `
+noremap [ [mF(bzz
+noremap ] j]mF(bzz
+noremap <space>g gg]mF(bzz
+
+noremap <space>w :w<return>
+noremap <space>q :q<return>
+
+noremap <return> o<esc>
+noremap <s-return> O<esc>
+
+noremap <s-space> /[.,]<return>/\S<return>
+noremap <space>a 0/\.\.<return>vlc
+noremap <space>e y0:s/<c-r>"/
+noremap <space>p ?[A-Z_.\s]<return>v/[A-Z_.\s(]<return>hc
+
+noremap <s-m> ma
+noremap <space>m `a
+
+noremap <space>s f"
+noremap <space>S f"vi"pyi"0
+noremap ss ci"
+noremap <space>h f(
+noremap <space>j J
+
+noremap <space>` viw~
+noremap <space>c V:co ''<return>zz
+noremap <space>C V:co ''-1<return>zz
+noremap <space>i 0/[0-9]<return><c-a>0
+noremap <space>n <c-a>
+noremap <space>d d$a
+noremap <space>D d^i
+noremap <space>y yiw
+noremap <space>t yiw
+noremap <space>v viw
+noremap <space>r viwpyiw
+noremap <space>R viapyia
+
+:AddCycleGroup True False
+:AddCycleGroup public private
+
+eclipseuiaction openres org.eclipse.ui.navigate.openResource
+nmap <space>o :openres<cr>
