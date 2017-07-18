@@ -1,0 +1,6 @@
+echo "cd $OLDPWD" >> C:\Users\<USERNAME>\.babun\cygwin\etc\zshrc 
+IntelliJ > Settings > Tools > Terminal > Shell path : C:\Users\<USERNAME>\.babun\cygwin\bin\zsh.exe
+
+???
+ 
+Profit
