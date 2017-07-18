@@ -1,5 +1,5 @@
-echo "cd $OLDPWD" >> C:\Users\<USERNAME>\.babun\cygwin\etc\zshrc 
-IntelliJ > Settings > Tools > Terminal > Shell path : C:\Users\<USERNAME>\.babun\cygwin\bin\zsh.exe
+echo "cd $OLDPWD" >> %USERPROFILE%\.babun\cygwin\etc\zshrc 
+IntelliJ > Settings > Tools > Terminal > Shell path : %USERPROFILE%\.babun\cygwin\bin\zsh.exe
 
 ???
  
