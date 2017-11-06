@@ -1,0 +1,4 @@
+alias p='kubectl get pods -n passlayer-secure'
+alias l='kubectl log -n passlayer-secure'
+alias e='kubectl exec -it -n passlayer-secure'
+alias watchpods='watch -n 1 kubectl get pods -n passlayer-secure'
