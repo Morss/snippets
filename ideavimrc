@@ -1,0 +1,55 @@
+set noincsearch
+set ignorecase
+set smartcase
+set noexpandtab
+
+let mapleader = " "
+"inoremap <s-space> <esc>la
+
+map J 3j
+map K 3k
+
+map H gT
+map L gt
+
+noremap ' `
+noremap * *zz
+noremap # #zz
+noremap [ [mF(bzz
+noremap ] j]mF(bzz
+noremap <leader>g gg]mF(bzz
+
+noremap <leader>w :w<return>
+noremap <leader>q :q<return>
+
+noremap <return> o<esc>
+noremap <s-return> O<esc>
+
+"noremap <s-space> /[.,]<return>/\S<return>
+noremap <leader>a 0/\.\.<return>vlc
+noremap <leader>e y0:s/<c-r>"/
+noremap <leader>p ?[A-Z_.\s]<return>v/[A-Z_.\s(]<return>hc
+
+noremap <s-m> ma
+noremap <leader>m `a
+
+noremap <leader>s f"
+noremap <leader>S f"vi"pyi"0
+noremap ss ci"
+noremap <leader>h f(
+noremap <leader>j J
+
+noremap <leader>` viw~
+noremap <leader>c V:co ''<return>zz
+noremap <leader>C V:co ''-1<return>zz
+noremap <leader>i 0/[0-9]<return><c-a>0
+noremap <leader>n <c-a>
+noremap <leader>d d$a
+noremap <leader>D d^i
+noremap <leader>y yiw
+noremap <leader>t yiw
+noremap <leader>v viw
+noremap <leader>r viwpyiw
+noremap <leader>R viapyia
+
+inoremap ii <esc>
