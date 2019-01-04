@@ -1,5 +1,10 @@
 " wget https://raw.githubusercontent.com/Morss/snippets/master/vimrc -O ~/.vimrc
 
+" Map Caps Lock key to Esc
+" xmodmap -e "remove Lock = Caps_Lock"
+" xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+" xmodmap -pke > ~/.xmodmap
+
 " Cursor style
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
