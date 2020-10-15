@@ -11,6 +11,10 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
+" Mouse support (in tmux)
+set ttymouse=xterm2
+set mouse=a
+
 " Behavior
 set noincsearch
 set ignorecase
