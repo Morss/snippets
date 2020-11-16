@@ -5,6 +5,10 @@
 " xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 " xmodmap -pke > ~/.xmodmap
 
+" Mouse support (in tmux)
+set ttymouse=xterm2
+set mouse=a
+
 " Cursor style
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
