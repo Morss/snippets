@@ -78,7 +78,7 @@ noremap <space>m `a
 noremap <space>s f"l
 " Jump to string and replace contents with register ""
 noremap <space>S f"vi"pyi"0
-" Change contents of current string
+" Change contents of next string
 noremap ss ci"
 
 " Jump to (
