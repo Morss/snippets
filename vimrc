@@ -14,11 +14,11 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 let ghregex='\(^\|\s\s\)\zs\.\S\+'
 let g:netrw_list_hide=ghregex
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Lexplore
-  autocmd VimEnter * :wincmd l
-augroup END
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Lexplore
+"  autocmd VimEnter * :wincmd l
+"augroup END
 
 " Mouse support (in tmux)
 set ttymouse=xterm2
