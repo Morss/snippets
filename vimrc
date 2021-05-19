@@ -21,7 +21,8 @@ let g:netrw_list_hide=ghregex
 "augroup END
 
 " Mouse support (in tmux)
-set ttymouse=xterm2
+set ttymouse=xterm2 
+" set ttymouse=sgr "for WSL2
 set mouse=a
 
 " Cursor style
